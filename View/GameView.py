@@ -38,7 +38,7 @@ class GameView(AbstractGameView):
                         print(" {} ".format(alphabet[line - 1] or ""), end = "")
                     else:
                         if isinstance(board.board[line-1][column-1], Ship) :
-                            value = "A"
+                            value = " "
                         else:
                             value = board.board[line-1][column-1]
                         print("[{}]".format(value or " "), end = " ")
